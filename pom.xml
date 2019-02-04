@@ -19,7 +19,6 @@
 		<module>config</module>
 		<module>tools</module>
 	</modules>
-
 	<build>
 		<plugins>
 			<plugin>
