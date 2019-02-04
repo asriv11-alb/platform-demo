@@ -21,5 +21,6 @@
 <module>retail-item-flow</module>
 <module>supply-item-flow</module>
 <module>upc-product-flow</module>
+<module>upc-adls-to-teradata-flow</module>
 </modules>
 </project>

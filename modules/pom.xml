@@ -27,6 +27,7 @@
 <module>retail-item</module>
 <module>supply-item</module>
 <module>upc-product</module>
+<module>upc-adls-to-teradata</module>
 </modules>
     <build>
         <finalName>${project.artifactId}</finalName>
