@@ -19,18 +19,24 @@
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
-		    <plugin>
-                <groupId>com.exadatum.xcatalyst.xmaven</groupId>
-                <artifactId>depack-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>resolveArchive</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>unpack-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>unpack-dependencies</goal>
+						</goals>
+						<configuration>
+							<includeTypes>tar.gz</includeTypes>
+							<outputDirectory>${project.build.directory}/generated-sources</outputDirectory>
+							<stripVersion>true</stripVersion>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<executions>
