@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.albertsons.itds</groupId>
+		<groupId>com.albertsons.itds.demo</groupId>
 		<artifactId>workflows</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
@@ -10,19 +10,19 @@
 	<packaging>jar</packaging>
 	<dependencies>
 	<dependency>
-        <groupId>com.albertsons.itds</groupId>
+        <groupId>com.albertsons.itds.demo</groupId>
         <artifactId>upc-product-setup</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <type>step</type>
     </dependency>
     <dependency>
-        <groupId>com.albertsons.itds</groupId>
+        <groupId>com.albertsons.itds.demo</groupId>
         <artifactId>upc-product-ingest</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <type>step</type>
     </dependency>
     <dependency>
-        <groupId>com.albertsons.itds</groupId>
+        <groupId>com.albertsons.itds.demo</groupId>
         <artifactId>upc-product-cleanup</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <type>step</type>
