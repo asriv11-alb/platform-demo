@@ -203,7 +203,7 @@ fn_run_hive \
 fn_run_hive \
     "${PROJECT_HOME_DIRECTORY}" \
     "${PROJECT_HOME_DIRECTORY}/supply-item-cdc/etc/hive/supply-item.hive.properties" \
-    "${PROJECT_HOME_DIRECTORY}/supply-item-cdc/etc/schema/supply-item-increment.hql" &
+    "${PROJECT_HOME_DIRECTORY}/supply-item-cdc/etc/schema/supply-item-increment.hql"
 
 fn_run_hive \
     "${PROJECT_HOME_DIRECTORY}" \
