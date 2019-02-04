@@ -12,7 +12,7 @@
 		<module>build</module>
 		<module>modules</module>
 		<module>workflows</module>
-		<!--<module>releases</module>-->
+		<module>releases</module>
 		<module>libraries</module>
 		<module>config</module>
 		<module>tools</module>
@@ -87,19 +87,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<dependencies>
-					<dependency>
-						<groupId>org.codehaus.plexus</groupId>
-						<artifactId>plexus-utils</artifactId>
-						<version>3.0.15</version>
-					</dependency>
-				</dependencies>
-
-			</plugin>
+			</plugin>		
 		</plugins>
 	</build>
 
