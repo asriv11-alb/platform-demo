@@ -21,7 +21,7 @@ DROP TABLE
     ${DB_WORK}.history_retail_customer_champ
 ;
 
-CREATE EXTERNAL TABLE ${DB_WORK}.history_retail_customer_champ
+CREATE EXTERNAL TABLE IF NOT EXISTS ${DB_WORK}.history_retail_customer_champ
   (
     creationtm                       STRING,
     employee_sk                       STRING,

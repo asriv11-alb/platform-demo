@@ -21,7 +21,7 @@ DROP TABLE
     ${DB_WORK}.history_employee_work_schedule
 ;
 
-CREATE EXTERNAL TABLE ${DB_WORK}.history_employee_work_schedule
+CREATE EXTERNAL TABLE IF NOT EXISTS ${DB_WORK}.history_employee_work_schedule
   (
     creationtm                       STRING,
     employee_sk                       STRING,

@@ -21,7 +21,7 @@ DROP TABLE
     ${DB_WORK}.increment_supply_item
 ;
 
-CREATE TABLE ${DB_WORK}.increment_supply_item
+CREATE TABLE IF NOT EXISTS ${DB_WORK}.increment_supply_item
   (
     creationtm                       STRING,
     employee_sk                       STRING,

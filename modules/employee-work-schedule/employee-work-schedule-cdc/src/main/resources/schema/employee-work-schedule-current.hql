@@ -21,7 +21,7 @@ DROP TABLE
     ${DB_WORK}.current_employee_work_schedule
 ;
 
-CREATE TABLE ${DB_WORK}.current_employee_work_schedule
+CREATE TABLE IF NOT EXISTS ${DB_WORK}.current_employee_work_schedule
   (
     creationtm                       STRING,
     employee_sk                       STRING,

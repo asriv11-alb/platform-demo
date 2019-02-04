@@ -21,7 +21,7 @@ DROP TABLE
     ${DB_WORK}.temp_employee_work_time
 ;
 
-CREATE TABLE ${DB_WORK}.temp_employee_work_time
+CREATE TABLE IF NOT EXISTS ${DB_WORK}.temp_employee_work_time
   (
     creationtm                       STRING,
     employee_sk                       STRING,

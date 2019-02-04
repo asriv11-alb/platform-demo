@@ -21,7 +21,7 @@ DROP TABLE
     ${DB_WORK}.temp_retail_customer_email
 ;
 
-CREATE TABLE ${DB_WORK}.temp_retail_customer_email
+CREATE TABLE IF NOT EXISTS ${DB_WORK}.temp_retail_customer_email
   (
     creationtm                       STRING,
     employee_sk                       STRING,

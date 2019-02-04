@@ -21,7 +21,7 @@ DROP TABLE
     ${DB_WORK}.history_retail_customer_ecom
 ;
 
-CREATE EXTERNAL TABLE ${DB_WORK}.history_retail_customer_ecom
+CREATE EXTERNAL TABLE IF NOT EXISTS ${DB_WORK}.history_retail_customer_ecom
   (
     creationtm                       STRING,
     employee_sk                       STRING,

@@ -21,7 +21,7 @@ DROP TABLE
     ${DB_WORK}.increment_upc_product
 ;
 
-CREATE TABLE ${DB_WORK}.increment_upc_product
+CREATE TABLE IF NOT EXISTS ${DB_WORK}.increment_upc_product
   (
     s_no                       STRING,
     upc_id                       STRING,

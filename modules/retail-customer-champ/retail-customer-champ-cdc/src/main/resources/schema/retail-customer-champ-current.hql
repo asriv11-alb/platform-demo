@@ -21,7 +21,7 @@ DROP TABLE
     ${DB_WORK}.current_retail_customer_champ
 ;
 
-CREATE TABLE ${DB_WORK}.current_retail_customer_champ
+CREATE TABLE IF NOT EXISTS ${DB_WORK}.current_retail_customer_champ
   (
     creationtm                       STRING,
     employee_sk                       STRING,

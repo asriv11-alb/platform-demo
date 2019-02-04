@@ -21,7 +21,7 @@ DROP TABLE
     ${DB_WORK}.work_upc_product
 ;
 
-CREATE EXTERNAL TABLE ${DB_WORK}.work_upc_product
+CREATE EXTERNAL TABLE IF NOT EXISTS ${DB_WORK}.work_upc_product
   (
     s_no                       STRING,
     upc_id                       STRING,

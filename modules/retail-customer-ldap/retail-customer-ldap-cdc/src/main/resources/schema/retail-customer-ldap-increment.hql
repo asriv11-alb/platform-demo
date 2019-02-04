@@ -21,7 +21,7 @@ DROP TABLE
     ${DB_WORK}.increment_retail_customer_ldap
 ;
 
-CREATE TABLE ${DB_WORK}.increment_retail_customer_ldap
+CREATE TABLE IF NOT EXISTS ${DB_WORK}.increment_retail_customer_ldap
   (
     creationtm                       STRING,
     employee_sk                       STRING,

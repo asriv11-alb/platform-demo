@@ -21,7 +21,7 @@ DROP TABLE
     ${DB_WORK}.work_retail_customer_email
 ;
 
-CREATE EXTERNAL TABLE ${DB_WORK}.work_retail_customer_email
+CREATE EXTERNAL TABLE IF NOT EXISTS ${DB_WORK}.work_retail_customer_email
   (
     creationtm                       STRING,
     employee_sk                       STRING,

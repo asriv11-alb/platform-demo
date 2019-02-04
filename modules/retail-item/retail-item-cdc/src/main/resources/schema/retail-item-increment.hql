@@ -21,7 +21,7 @@ DROP TABLE
     ${DB_WORK}.increment_retail_item
 ;
 
-CREATE TABLE ${DB_WORK}.increment_retail_item
+CREATE TABLE IF NOT EXISTS ${DB_WORK}.increment_retail_item
   (
     creationtm                       STRING,
     employee_sk                       STRING,
