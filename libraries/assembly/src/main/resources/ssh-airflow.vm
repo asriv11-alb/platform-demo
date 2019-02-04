@@ -1,0 +1,47 @@
+from airflow import DAG
+from airflow.operators.bash_operator import BashOperator
+from datetime import datetime, timedelta
+from airflow.models import Variable
+import airflow
+import configparser
+import os
+
+from airflow.models import Variable
+from airflow.contrib.operators import SSHOperator
+from airflow.contrib.hooks import SSHHook
+sshHook = SSHHook('${dag_id}-ssh')
+
+
+
+config = configparser.RawConfigParser()
+config.read(os.path.dirname(os.path.abspath(__file__)) + '/workflow.properties')
+
+application_install_dir=config.get('airflow', 'APPLICATION_INSTALL_DIR');
+additional_arguments=config.get('airflow', 'ADDITIONAL_ARGUMENTS');
+
+default_args = {
+    'owner': 'airflow',
+    'schedule_interval': None,
+    'start_date': airflow.utils.dates.days_ago(1)
+}
+
+dag = DAG('${dag_id}', default_args=default_args)
+
+#foreach( $step in $stepList )
+
+${step.getCoordinate().getArtifactId().replace("-","_")} = SSHOperator(
+    task_id='${step.getCoordinate().getArtifactId()}',
+    command='bash {{ params.APPLICATION_INSTALL_DIR }}/${step.getCoordinate().getArtifactId()}/bin/${step.getCoordinate().getArtifactId()}.sh {{ params.ADDITIONAL_ARGUMENTS }} ',
+    params={'APPLICATION_INSTALL_DIR': application_install_dir,
+            'ADDITIONAL_ARGUMENTS': additional_arguments},
+    ssh_hook=sshHook,
+    dag=dag)
+#end
+#foreach( $step in $stepList )
+#foreach( $dependency in $step.getDependencies())
+
+${step.getCoordinate().getArtifactId().replace("-","_")}.set_upstream(${dependency.getArtifactId().replace("-","_")})
+
+#end
+#end
+
