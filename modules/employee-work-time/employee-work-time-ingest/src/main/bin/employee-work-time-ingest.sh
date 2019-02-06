@@ -61,7 +61,7 @@ fn_run_teradata_to_raw_incremental \
     ${DATABASE_NAME} \
     ${USERNAME} \
     ${PASSWORD_FILE} \
-    ${FS_PATH}/employee_work_time/batch_id=${BATCH_ID} \
+    ${FS_PATH}/increment_employee_work_time/batch_id=${BATCH_ID} \
     employee_work_time \
     "creationtm >= ${MIN_VAL} and creationtm < ${MAX_VAL}" \
     ${FIELDS_TERMINATOR}
