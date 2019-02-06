@@ -12,7 +12,7 @@
 #                           Identify Script Home                              #
 ###############################################################################
 
-fn_create_external_hive_database "${DB_WORK}" "${DB_WORK_DIR}"
+#fn_create_external_hive_database "${DB_WORK}" "${DB_WORK_DIR}"
 
 fn_run_hive \
     "${PROJECT_HOME_DIRECTORY}" \

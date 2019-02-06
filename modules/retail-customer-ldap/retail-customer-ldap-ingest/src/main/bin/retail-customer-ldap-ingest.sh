@@ -61,7 +61,7 @@ fn_run_teradata_to_raw_incremental \
     ${DATABASE_NAME} \
     ${USERNAME} \
     ${PASSWORD_FILE} \
-    ${FS_PATH}/retail-customer-ldap/batch_id=${BATCH_ID} \
+    ${FS_PATH}/retail_customer_ldap/batch_id=${BATCH_ID} \
     retail_customer_ldap \
     "creationtm >= ${MIN_VAL} and creationtm < ${MAX_VAL}" \
     ${FIELDS_TERMINATOR}

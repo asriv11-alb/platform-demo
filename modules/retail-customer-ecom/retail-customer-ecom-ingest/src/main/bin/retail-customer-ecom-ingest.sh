@@ -61,7 +61,7 @@ fn_run_teradata_to_raw_incremental \
     ${DATABASE_NAME} \
     ${USERNAME} \
     ${PASSWORD_FILE} \
-    ${FS_PATH}/retail-customer-ecom/batch_id=${BATCH_ID} \
+    ${FS_PATH}/retail_customer_ecom/batch_id=${BATCH_ID} \
     retail_customer_ecom \
     "creationtm >= ${MIN_VAL} and creationtm < ${MAX_VAL}" \
     ${FIELDS_TERMINATOR}

@@ -61,7 +61,7 @@ fn_run_teradata_to_raw_incremental \
     ${DATABASE_NAME} \
     ${USERNAME} \
     ${PASSWORD_FILE} \
-    ${FS_PATH}/upc-product/batch_id=${BATCH_ID} \
+    ${FS_PATH}/upc_product/batch_id=${BATCH_ID} \
     upc_product \
     "last_update_ts >= ${MIN_VAL} and last_update_ts < ${MAX_VAL}" \
     ${FIELDS_TERMINATOR}
