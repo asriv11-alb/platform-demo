@@ -6,16 +6,16 @@
     	<artifactId>modules</artifactId>
     	<version>1.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>employee-work-schedule</artifactId>
+    <artifactId>employee-work-avail</artifactId>
     <packaging>pom</packaging>
 
     <modules>
 
-    <module>employee-work-schedule-ingest</module>
-<module>employee-work-schedule-cdc</module>
-<module>employee-work-schedule-export</module>
-<module>employee-work-schedule-cleanup</module>
-<module>employee-work-schedule-setup</module>
+    <module>employee-work-avail-ingest</module>
+<module>employee-work-avail-cdc</module>
+<module>employee-work-avail-export</module>
+<module>employee-work-avail-cleanup</module>
+<module>employee-work-avail-setup</module>
 </modules>
     <build>
         <finalName>${project.artifactId}</finalName>

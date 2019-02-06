@@ -18,7 +18,8 @@
     </dependencies>
     <modules>
 
-    <module>employee-work-schedule</module>
+    <module>employee-work-avail</module>
+<module>employee-work-schedule</module>
 <module>employee-work-time</module>
 <module>retail-customer-champ</module>
 <module>retail-customer-ecom</module>
@@ -27,7 +28,7 @@
 <module>retail-item</module>
 <module>supply-item</module>
 <module>upc-product</module>
-<module>upc-adls-to-teradata</module>
+<module>upc-product-teradata</module>
 </modules>
     <build>
         <finalName>${project.artifactId}</finalName>

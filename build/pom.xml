@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>com.albertsons.itds.demo</groupId>
-        <artifactId>platform-demo</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+    		<groupId>com.albertsons.itds.demo</groupId>
+    		<artifactId>platform-demo</artifactId>
+    		<version>1.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>build</artifactId>
-    <packaging>pom</packaging>
-    <dependencies>
+	<artifactId>build</artifactId>
+	<packaging>pom</packaging>
+	<dependencies>
         <dependency>
             <groupId>com.albertsons.itds.demo</groupId>
             <artifactId>releases</artifactId>
@@ -22,359 +21,395 @@
             <version>1.0.0-SNAPSHOT</version>
             <type>tar.gz</type>
         </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>hive-udfs</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>pig-udfs</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
+		<dependency>
+			<groupId>com.albertsons.itds.demo</groupId>
+			<artifactId>hive-udfs</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.albertsons.itds.demo</groupId>
+			<artifactId>pig-udfs</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
         <!--<dependency>-->
-        <!--<groupId>com.albertsons.itds.demo</groupId>-->
-        <!--<artifactId>platform-demo-flow</artifactId>-->
-        <!--<version>1.0.0-SNAPSHOT</version>-->
-        <!--<type>zip</type>-->
-        <!--</dependency>-->
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>employee-work-schedule-ingest</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>employee-work-schedule-cdc</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>employee-work-schedule-export</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>employee-work-schedule-cleanup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>employee-work-schedule-setup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>employee-work-time-ingest</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>employee-work-time-cdc</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>employee-work-time-export</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>employee-work-time-cleanup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>employee-work-time-setup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-champ-ingest</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-champ-cdc</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-champ-export</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-champ-cleanup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-champ-setup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-ecom-ingest</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-ecom-cdc</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-ecom-export</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-ecom-cleanup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-ecom-setup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-email-ingest</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-email-cdc</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-email-export</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-email-cleanup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-email-setup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-ldap-ingest</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-ldap-cdc</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-ldap-export</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-ldap-cleanup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-ldap-setup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-item-ingest</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-item-cdc</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-item-export</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-item-cleanup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-item-setup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>supply-item-ingest</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>supply-item-cdc</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>supply-item-export</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>supply-item-cleanup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>supply-item-setup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>upc-product-ingest</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>upc-product-cdc</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>upc-product-export</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>upc-product-cleanup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>upc-product-setup</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>employee-work-schedule-flow</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>employee-work-time-flow</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-champ-flow</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-ecom-flow</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-email-flow</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-customer-ldap-flow</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>retail-item-flow</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>supply-item-flow</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>upc-product-flow</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>upc-adls-to-teradata</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>tar.gz</type>
-        </dependency>
-        <dependency>
-            <groupId>com.albertsons.itds.demo</groupId>
-            <artifactId>upc-adls-to-teradata-flow</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>zip</type>
-        </dependency>
-    </dependencies>
+                    <!--<groupId>com.albertsons.itds.demo</groupId>-->
+                    <!--<artifactId>platform-demo-flow</artifactId>-->
+                    <!--<version>1.0.0-SNAPSHOT</version>-->
+                    <!--<type>zip</type>-->
+                <!--</dependency>-->
+	<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-avail-ingest</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-avail-cdc</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-avail-export</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-avail-cleanup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-avail-setup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-schedule-ingest</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-schedule-cdc</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-schedule-export</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-schedule-cleanup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-schedule-setup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-time-ingest</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-time-cdc</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-time-export</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-time-cleanup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-time-setup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-champ-ingest</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-champ-cdc</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-champ-export</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-champ-cleanup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-champ-setup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-ecom-ingest</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-ecom-cdc</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-ecom-export</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-ecom-cleanup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-ecom-setup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-email-ingest</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-email-cdc</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-email-export</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-email-cleanup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-email-setup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-ldap-ingest</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-ldap-cdc</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-ldap-export</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-ldap-cleanup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-ldap-setup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-item-ingest</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-item-cdc</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-item-export</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-item-cleanup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-item-setup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>supply-item-ingest</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>supply-item-cdc</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>supply-item-export</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>supply-item-cleanup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>supply-item-setup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>upc-product-ingest</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>upc-product-cdc</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>upc-product-export</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>upc-product-cleanup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>upc-product-setup</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-avail-flow</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>zip</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-schedule-flow</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>zip</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>employee-work-time-flow</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>zip</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-champ-flow</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>zip</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-ecom-flow</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>zip</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-email-flow</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>zip</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-customer-ldap-flow</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>zip</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>retail-item-flow</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>zip</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>supply-item-flow</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>zip</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>upc-product-flow</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>zip</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>upc-product-teradata</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>tar.gz</type>
+</dependency>
+<dependency>
+<groupId>com.albertsons.itds.demo</groupId>
+<artifactId>upc-product-teradata-flow</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<type>zip</type>
+</dependency>
+</dependencies>
     <build>
         <finalName>${project.parent.artifactId}-${project.version}</finalName>
         <plugins>

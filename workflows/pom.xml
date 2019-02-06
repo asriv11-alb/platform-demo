@@ -12,7 +12,8 @@
 		<!--<module>ingest-flow</module>-->
         <!--<module>ingest-setup</module>-->
         <!--<module>ingest-cleanup</module>-->
-	<module>employee-work-schedule-flow</module>
+	<module>employee-work-avail-flow</module>
+<module>employee-work-schedule-flow</module>
 <module>employee-work-time-flow</module>
 <module>retail-customer-champ-flow</module>
 <module>retail-customer-ecom-flow</module>
@@ -21,6 +22,6 @@
 <module>retail-item-flow</module>
 <module>supply-item-flow</module>
 <module>upc-product-flow</module>
-<module>upc-adls-to-teradata-flow</module>
+<module>upc-product-teradata-flow</module>
 </modules>
 </project>

@@ -1,14 +1,14 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3-alpine' 
-            args '-v /root/jenkins_home/.m2:/root/.m2' 
+            image 'maven:3-alpine'
+            args '-v /root/jenkins_home/.m2:/root/.m2'
         }
     }
     stages {
-        stage('Build') { 
+        stage('Build') {
             steps {
-                sh 'mvn clean deploy -s /var/jenkins_home/.m2/settings.xml' 
+                sh 'mvn clean deploy -s /var/jenkins_home/.m2/settings.xml'
             }
         }
     }
